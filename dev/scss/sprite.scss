@@ -1,0 +1,221 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$checkbox-name: 'checkbox';
+$checkbox-x: 105px;
+$checkbox-y: 102px;
+$checkbox-offset-x: -105px;
+$checkbox-offset-y: -102px;
+$checkbox-width: 13px;
+$checkbox-height: 10px;
+$checkbox-total-width: 129px;
+$checkbox-total-height: 112px;
+$checkbox-image: '../img/sprite.png';
+$checkbox: (105px, 102px, -105px, -102px, 13px, 10px, 129px, 112px, '../img/sprite.png', 'checkbox', );
+$fb-name: 'fb ';
+$fb-x: 86px;
+$fb-y: 43px;
+$fb-offset-x: -86px;
+$fb-offset-y: -43px;
+$fb-width: 43px;
+$fb-height: 43px;
+$fb-total-width: 129px;
+$fb-total-height: 112px;
+$fb-image: '../img/sprite.png';
+$fb-: (86px, 43px, -86px, -43px, 43px, 43px, 129px, 112px, '../img/sprite.png', 'fb ', );
+$fb-hover-name: 'fb-hover';
+$fb-hover-x: 43px;
+$fb-hover-y: 0px;
+$fb-hover-offset-x: -43px;
+$fb-hover-offset-y: 0px;
+$fb-hover-width: 43px;
+$fb-hover-height: 43px;
+$fb-hover-total-width: 129px;
+$fb-hover-total-height: 112px;
+$fb-hover-image: '../img/sprite.png';
+$fb-hover: (43px, 0px, -43px, 0px, 43px, 43px, 129px, 112px, '../img/sprite.png', 'fb-hover', );
+$fb-name: 'fb';
+$fb-x: 79px;
+$fb-y: 86px;
+$fb-offset-x: -79px;
+$fb-offset-y: -86px;
+$fb-width: 26px;
+$fb-height: 26px;
+$fb-total-width: 129px;
+$fb-total-height: 112px;
+$fb-image: '../img/sprite.png';
+$fb: (79px, 86px, -79px, -86px, 26px, 26px, 129px, 112px, '../img/sprite.png', 'fb', );
+$phone-name: 'phone';
+$phone-x: 117px;
+$phone-y: 86px;
+$phone-offset-x: -117px;
+$phone-offset-y: -86px;
+$phone-width: 12px;
+$phone-height: 16px;
+$phone-total-width: 129px;
+$phone-total-height: 112px;
+$phone-image: '../img/sprite.png';
+$phone: (117px, 86px, -117px, -86px, 12px, 16px, 129px, 112px, '../img/sprite.png', 'phone', );
+$pin-name: 'pin';
+$pin-x: 105px;
+$pin-y: 86px;
+$pin-offset-x: -105px;
+$pin-offset-y: -86px;
+$pin-width: 12px;
+$pin-height: 16px;
+$pin-total-width: 129px;
+$pin-total-height: 112px;
+$pin-image: '../img/sprite.png';
+$pin: (105px, 86px, -105px, -86px, 12px, 16px, 129px, 112px, '../img/sprite.png', 'pin', );
+$tw-name: 'tw ';
+$tw-x: 0px;
+$tw-y: 0px;
+$tw-offset-x: 0px;
+$tw-offset-y: 0px;
+$tw-width: 43px;
+$tw-height: 43px;
+$tw-total-width: 129px;
+$tw-total-height: 112px;
+$tw-image: '../img/sprite.png';
+$tw-: (0px, 0px, 0px, 0px, 43px, 43px, 129px, 112px, '../img/sprite.png', 'tw ', );
+$tw-hover-name: 'tw-hover';
+$tw-hover-x: 86px;
+$tw-hover-y: 0px;
+$tw-hover-offset-x: -86px;
+$tw-hover-offset-y: 0px;
+$tw-hover-width: 43px;
+$tw-hover-height: 43px;
+$tw-hover-total-width: 129px;
+$tw-hover-total-height: 112px;
+$tw-hover-image: '../img/sprite.png';
+$tw-hover: (86px, 0px, -86px, 0px, 43px, 43px, 129px, 112px, '../img/sprite.png', 'tw-hover', );
+$tw-hover2-name: 'tw-hover2';
+$tw-hover2-x: 27px;
+$tw-hover2-y: 86px;
+$tw-hover2-offset-x: -27px;
+$tw-hover2-offset-y: -86px;
+$tw-hover2-width: 26px;
+$tw-hover2-height: 26px;
+$tw-hover2-total-width: 129px;
+$tw-hover2-total-height: 112px;
+$tw-hover2-image: '../img/sprite.png';
+$tw-hover2: (27px, 86px, -27px, -86px, 26px, 26px, 129px, 112px, '../img/sprite.png', 'tw-hover2', );
+$tw-name: 'tw';
+$tw-x: 53px;
+$tw-y: 86px;
+$tw-offset-x: -53px;
+$tw-offset-y: -86px;
+$tw-width: 26px;
+$tw-height: 26px;
+$tw-total-width: 129px;
+$tw-total-height: 112px;
+$tw-image: '../img/sprite.png';
+$tw: (53px, 86px, -53px, -86px, 26px, 26px, 129px, 112px, '../img/sprite.png', 'tw', );
+$vk-name: 'vk ';
+$vk-x: 43px;
+$vk-y: 43px;
+$vk-offset-x: -43px;
+$vk-offset-y: -43px;
+$vk-width: 43px;
+$vk-height: 43px;
+$vk-total-width: 129px;
+$vk-total-height: 112px;
+$vk-image: '../img/sprite.png';
+$vk-: (43px, 43px, -43px, -43px, 43px, 43px, 129px, 112px, '../img/sprite.png', 'vk ', );
+$vk-hover-name: 'vk-hover';
+$vk-hover-x: 0px;
+$vk-hover-y: 43px;
+$vk-hover-offset-x: 0px;
+$vk-hover-offset-y: -43px;
+$vk-hover-width: 43px;
+$vk-hover-height: 43px;
+$vk-hover-total-width: 129px;
+$vk-hover-total-height: 112px;
+$vk-hover-image: '../img/sprite.png';
+$vk-hover: (0px, 43px, 0px, -43px, 43px, 43px, 129px, 112px, '../img/sprite.png', 'vk-hover', );
+$vk-name: 'vk';
+$vk-x: 0px;
+$vk-y: 86px;
+$vk-offset-x: 0px;
+$vk-offset-y: -86px;
+$vk-width: 27px;
+$vk-height: 26px;
+$vk-total-width: 129px;
+$vk-total-height: 112px;
+$vk-image: '../img/sprite.png';
+$vk: (0px, 86px, 0px, -86px, 27px, 26px, 129px, 112px, '../img/sprite.png', 'vk', );
+$spritesheet-width: 129px;
+$spritesheet-height: 112px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($checkbox, $fb-, $fb-hover, $fb, $phone, $pin, $tw-, $tw-hover, $tw-hover2, $tw, $vk-, $vk-hover, $vk, );
+$spritesheet: (129px, 112px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

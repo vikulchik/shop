@@ -1,0 +1,8 @@
+{
+  "name": "shop",
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "normalize-scss": "~3.0.3"
+  }
+}
