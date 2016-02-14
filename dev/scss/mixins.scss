@@ -1,0 +1,23 @@
+@mixin font($size, $font, $color) {
+  font-family: $font;
+  font-size: ($size/16) + rem;
+  line-height: (($size/16) + 0.125) + rem;
+  color: $color;
+}
+
+.clearfix {
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.hide {
+  display: none !important; // for js
+}
