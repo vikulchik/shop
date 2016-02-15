@@ -6,6 +6,10 @@ html(lang='ru')
     link(rel="icon" href="img/favicon-32x32.png" type="image/x-icon")
     link(rel="stylesheet" href="css/main.css")
   body
-    .wrapper
       include pages/_header
       include pages/_navigation
+      .wrapper
+        .wrapper__content.clearfix
+          include pages/_wrapper-content
+          include pages/_aside
+          include pages/_container

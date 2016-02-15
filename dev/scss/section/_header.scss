@@ -18,10 +18,10 @@
     width: 182px;
     display: block;
     margin: 0;
-    color: #333333;
-    font-size: 14px;
     position: relative;
     float: left;
+
+    @include font(14, $open-reg,  #333333);
 
     &:after {
       position: absolute;
@@ -38,10 +38,10 @@
     width: 164px;
     display: block;
     text-decoration: none;
-    color: #333333;
-    font-size: 18px;
     position: relative;
     float: right;
+
+    @include font(18, $open-semi-bold, #333333 );
     &:hover {
       text-decoration: underline;
     }
@@ -167,8 +167,8 @@
   height:12px;
   padding: 11px 8px;
   position: relative;
-  color: #7f7f7f;
-  font-size: 14px;
+
+  @include font(12,$open-reg,  #7f7f7f );
 
   &:focus {
     outline: none;
@@ -182,9 +182,9 @@
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   background: #ff6e35;
-  color: #FFFFFF;
-  font-size: 16px;
   border: none;
+
+  @include font(16, $open-semi-bold, #FFFFFF );
 
   &:focus {
     outline: none;
@@ -201,7 +201,7 @@
 
 .header__item {
   list-style-type: none;
-  margin-left: 30px;
+  margin-left: 17px;
   display: inline-block;
   &:first-child {
     margin-left: 0;
@@ -209,8 +209,8 @@
 }
 
 .header__link {
-  color: #333333;
-  font-size: 16px;
+
+  @include font(16, $open-semi-bold,#333333);
 
   &:hover {
     color: #ff6600;

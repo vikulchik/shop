@@ -6,7 +6,7 @@
 }
 
 .main__menu {
-  width: 1094px;
+  width: 1125px;
   margin: auto;
   height: 100%;
 }
@@ -23,10 +23,10 @@
 
 .main__link {
   text-decoration: none;
-  color: #333333;
-  font-size: 16px;
   padding: 17px 16px;
   display: block;
+
+  @include font(16, $open-reg, #333333);
 
   &:hover {
     background: #e4e2e2;

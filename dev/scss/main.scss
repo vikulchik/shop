@@ -1,6 +1,15 @@
 @import "sprite";
 @import "mixins";
+@import "variables";
+@import "font";
 @import "section/_header";
 @import "section/_navigation";
+@import "section/_wrapper-content";
+@import "section/_aside";
+@import "section/_container";
 
 
+.wrapper {
+  width: 100%;
+  background: #f4f4f4;
+}

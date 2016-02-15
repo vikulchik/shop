@@ -1,0 +1,38 @@
+
+.wrapper__content {
+  max-width: 1156px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.wrapper__title {
+  margin-bottom: 30px;
+}
+
+.wrapper__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.wrapper__item {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.wrapper__link {
+  text-decoration: none;
+
+  @include font(14, $open-reg, #333333);
+}
+
+.wrapper__description {
+  margin: 0;
+
+  @include font(20, $open-semi-bold, #333333);
+}
+
+.wrapper__link--active {
+  color: #ff6600;
+}
+

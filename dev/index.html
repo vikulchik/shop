@@ -7,54 +7,114 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <header class="header">
+      <div class="header__contact">
+        <div class="main__contact clearfix">
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item"><a href="https://www.facebook.com/vika.kovalenko3" target="_blank" class="socials__link--fb socials__link">fb</a></li>
+              <li class="socials__item"><a href="https://vk.com/idvikul4ik" target="_blank" class="socials__link--vk socials__link">vk</a></li>
+              <li class="socials__item"><a href="https://twitter.com/vikanovikvika93" target="_blank" class="socials__link--tw socials__link">tw</a></li>
+            </ul>
+          </div>
+          <div class="header__right clearfix">
+            <p class="header__adress">ул. Маяковская 6, офис 17</p><a href="tel:+7(921)123-12-13" class="header__number">+7 (921) 123-12-13</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="header__info clearfix">
+          <div class="logo"><a href="http://shop.build-yourself.ru/" class="logo__link"><img src="../img/logo.png" alt="logo" class="logo__img"></a>
+            <h1 class="logo__description">Logo</h1>
+          </div>
+          <div class="header__search">
+            <input type="search" name="search" placeholder="Что будем искать" class="header__input">
+            <button type="submit" class="header__button"> Найти</button>
+          </div>
+          <div class="header__menu">
+            <ul class="header__list">
+              <li class="header__item"><a href="#" class="header__link">Карта проездов</a></li>
+              <li class="header__item"><a href="#" class="header__link">История заказов</a></li>
+              <li class="header__item"><a href="#" class="header__link">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="main__navigation">
+      <div class="main__menu">
+        <ul class="main__list">
+          <li class="main__item"><a href="#" class="main__link">Планшеты </a></li>
+          <li class="main__item"><a href="#" class="main__link">Мобильные телефоны </a></li>
+          <li class="main__item"><a href="#" class="main__link">Мр3 плееры</a></li>
+          <li class="main__item"><a href="#" class="main__link">Персональные компьютеры</a></li>
+          <li class="main__item"><a href="#" class="main__link">Ноутбуки</a></li>
+          <li class="main__item"><a href="#" class="main__link">Аксессуары</a></li>
+          <li class="main__item"><a href="#" class="main__link">Бытовая техника</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__contact">
-          <div class="main__contact clearfix">
-            <div class="socials">
-              <ul class="socials__list">
-                <li class="socials__item"><a href="https://www.facebook.com/vika.kovalenko3" target="_blank" class="socials__link--fb socials__link">fb</a></li>
-                <li class="socials__item"><a href="https://vk.com/idvikul4ik" target="_blank" class="socials__link--vk socials__link">vk</a></li>
-                <li class="socials__item"><a href="https://twitter.com/vikanovikvika93" target="_blank" class="socials__link--tw socials__link">tw</a></li>
-              </ul>
-            </div>
-            <div class="header__right clearfix">
-              <p class="header__adress">ул. Маяковская 6, офис 17</p><a href="tel:+7(921)123-12-13" class="header__number">+7 (921) 123-12-13</a>
-            </div>
-          </div>
-        </div>
-        <div class="header__main">
-          <div class="header__info clearfix">
-            <div class="logo"><a href="http://shop.build-yourself.ru/" class="logo__link"><img src="../img/logo.png" alt="logo" class="logo__img"></a>
-              <h1 class="logo__description">Logo</h1>
-            </div>
-            <div class="header__search">
-              <input type="search" name="search" placeholder="Что будем искать" class="header__input">
-              <button type="submit" class="header__button"> Найти</button>
-            </div>
-            <div class="header__menu">
-              <ul class="header__list">
-                <li class="header__item"><a href="#" class="header__link">Карта проездов</a></li>
-                <li class="header__item"><a href="#" class="header__link">История заказов</a></li>
-                <li class="header__item"><a href="#" class="header__link">Корзина</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-      <nav class="main__navigation">
-        <div class="main__menu">
-          <ul class="main__list">
-            <li class="main__item"><a href="#" class="main__link">Планшеты </a></li>
-            <li class="main__item"><a href="#" class="main__link">Мобильные телефоны </a></li>
-            <li class="main__item"><a href="#" class="main__link">Мр3 плееры</a></li>
-            <li class="main__item"><a href="#" class="main__link">Персональные компьютеры</a></li>
-            <li class="main__item"><a href="#" class="main__link">Ноутбуки</a></li>
-            <li class="main__item"><a href="#" class="main__link">Аксессуары</a></li>
-            <li class="main__item"><a href="#" class="main__link">Бытовая техника</a></li>
+      <div class="wrapper__content clearfix">
+        <div class="wrapper__title">
+          <ul class="wrapper__list">
+            <li class="wrapper__item"><a href="#" class="wrapper__link">Каталог</a></li>
+            <li class="wrapper__item"><a href="#" class="wrapper__link">></a></li>
+            <li class="wrapper__item"><a href="#" class="wrapper__link wrapper__link--active">Главная</a></li>
           </ul>
+          <h2 class="wrapper__description">Мобильные телефоны</h2>
         </div>
-      </nav>
+        <div class="filter">
+          <div class="filter__choose"><a href="#" class="filter__title">Наличие в магазинах</a>
+            <input type="radio" name="radio" class="filter__input">
+            <label class="filter__label">Во всех магазинах</br></label>
+            <input type="radio" name="radio" class="filter__input">
+            <label class="filter__label">В ближайшем ко мне магазине</label>
+          </div>
+          <div class="filter__choose"><a href="#" class="filter__title">Бренды</a>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">lenovo</br></label>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">Apple</br></label>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">Samsung</br></label>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">Asus</br></label>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">Motorola</br></label><a href="#" class="filter__reset">Сбросить фильтр</a>
+          </div>
+          <div class="filter__choose filter__choose--price"><a href="#" class="filter__title">Цена</a></div>
+          <div class="filter__choose filter__choose--color"><a href="#" class="filter__title">Цвет</a>
+            <ul class="filter__list">
+              <li class="filter__item"><a href="#" class="filter__link--white filter__link">1</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--grey filter__link">2</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--black filter__link">3</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--blue filter__link">4</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--red filter__link">5</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--yellow filter__link">6</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--orange filter__link">7</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--green filter__link">8</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--blue-second filter__link">9</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--purple filter__link">10</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--rose filter__link">11</a></li>
+              <li class="filter__item"><a href="#" class="filter__link--brown filter__link">12</a></li>
+            </ul>
+          </div>
+          <div class="filter__choose filter__choose--system"><a href="#" class="filter__title">Операционные системы</a>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">Android</br></label>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">iOS</br></label>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">Windows Mobile</br></label>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">Symbian</br></label>
+            <input type="checkbox" name="radio" class="filter__input">
+            <label class="filter__label">Custom</br><a href="#" class="filter__reset">Сбросить фильтр</a></label>
+          </div>
+        </div>
+        <div class="container"></div>
+      </div>
     </div>
   </body>
 </html>
