@@ -12,3 +12,18 @@ header.header
       p.header__adress ул. Маяковская 6, офис 17
       a(href="tel:+7(921)123-12-13").header__number +7 (921) 123-12-13
   .header__main
+    .header__info.clearfix
+      .logo
+        a(href='http://shop.build-yourself.ru/').logo__link
+          img(src="../img/logo.png" alt="logo").logo__img
+        h1.logo__description Logo
+      .header__search
+        input(type="search" name="search" placeholder="Что будем искать").header__input
+        button(type="submit").header__button  Найти
+      .header__menu
+        - var array = ['Карта проездов', 'История заказов',  'Корзина']
+        ul.header__list
+          each item in array
+            li.header__item
+              a(href="#").header__link= item
+

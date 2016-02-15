@@ -3,6 +3,8 @@
 
   &__contact {
     border-bottom: 1px solid #ebedef;
+    height: 77px;
+    background: #FFFFFF;
   }
 
   &__adress {
@@ -54,14 +56,29 @@
   &__main {
     height: 96px;
     background: #f4f4f4;
+    width: 100%;
+  }
+
+  &__search {
+    display: block;
+    width: 368px;
+    margin-top: 30px;
+    float: left;
+    margin-left: 96px;
+  }
+
+  &__menu {
+    width: 387px;
+    display: block;
+    float: right;
+    margin-top: 35px;
   }
 }
 
-.main__contact {
-  height: 77px;
-  background: #FFFFFF;
-  width: 1086px;
+.main__contact, .header__info {
+  width: 90%;
   margin: auto;
+  height: 100%;
 }
 .socials {
   display: block;
@@ -120,5 +137,76 @@
   &:hover {
 
     @include sprite($tw-hover2);
+  }
+}
+
+.logo {
+
+  display: block;
+  width: 240px;
+  float: left;
+  margin-top: 30px;
+
+  &__description {
+    position: absolute;
+    display: block;
+    top:0;
+    text-indent: -9999px;
+  }
+}
+
+.header__input {
+  border: 1px solid #dee1e4;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 288px;
+  height:12px;
+  padding: 11px 8px;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.header__button {
+  position: absolute;
+  width: 78px;
+  height: 36px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #ff6e35;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: #F44336}
+}
+
+.header__list {
+  padding: 0;
+  margin: 0;
+}
+
+.header__item {
+  list-style-type: none;
+  margin-left: 30px;
+  display: inline-block;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.header__link {
+  color: #333333;
+  font-size: 16px;
+
+  &:hover {
+    color: #ff6600;
   }
 }
