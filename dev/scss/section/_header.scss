@@ -7,15 +7,21 @@
     background: #FFFFFF;
   }
 
+  &__right {
+    width: 465px;
+    float: right;
+    display: block;
+    margin-top: 30px;
+  }
+
   &__adress {
     width: 182px;
     display: block;
-    float: right;
     margin: 0;
     color: #333333;
     font-size: 14px;
-    margin-top: 32px;
     position: relative;
+    float: left;
 
     &:after {
       position: absolute;
@@ -31,13 +37,11 @@
   &__number {
     width: 164px;
     display: block;
-    float: right;
     text-decoration: none;
     color: #333333;
     font-size: 18px;
-    margin-top: 31px;
     position: relative;
-    margin-right: 105px;
+    float: right;
     &:hover {
       text-decoration: underline;
     }
@@ -76,7 +80,7 @@
 }
 
 .main__contact, .header__info {
-  width: 90%;
+  max-width: 1156px;
   margin: auto;
   height: 100%;
 }
@@ -163,6 +167,8 @@
   height:12px;
   padding: 11px 8px;
   position: relative;
+  color: #7f7f7f;
+  font-size: 14px;
 
   &:focus {
     outline: none;

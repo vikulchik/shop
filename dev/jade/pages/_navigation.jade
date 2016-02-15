@@ -1,0 +1,7 @@
+nav.main__navigation
+  .main__menu
+    ul.main__list
+      -var array = ['Планшеты ', 'Мобильные телефоны ', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
+      each item in array
+        li.main__item
+          a(href="#").main__link= item
