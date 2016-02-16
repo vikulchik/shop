@@ -1,44 +1,82 @@
-.filter
-  .filter__choose
-    a(href="#").filter__title Наличие в магазинах
-    input(type="radio" name="radio").filter__input
-    label.filter__label Во всех магазинах</br>
-    input(type="radio" name="radio").filter__input
-    label.filter__label В ближайшем ко мне магазине
-  .filter__choose
-    a(href="#").filter__title Бренды
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label lenovo</br>
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label Apple</br>
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label Samsung</br>
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label Asus</br>
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label Motorola</br>
-    a(href="#").filter__reset Сбросить фильтр
-  .filter__choose.filter__choose--price
-    a(href="#").filter__title Цена
-  .filter__choose.filter__choose--color
-    a(href="#").filter__title Цвет
-    ul.filter__list
-      - var Item = {1 : 'white', 2 : 'grey', 3 : 'black', 4 : 'blue', 5 : 'red', 6 : 'yellow', 7 : 'orange', 8 : 'green', 9 : 'blue-second', 10 : 'purple', 11 : 'rose', 12 : 'brown'}
-      each val, key in Item
-        li.filter__item
-          a(href="#" class="filter__link--#{val}").filter__link= key
-  .filter__choose.filter__choose--system
-    a(href="#").filter__title Операционные системы
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label Android</br>
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label iOS</br>
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label Windows Mobile</br>
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label Symbian</br>
-    input(type="checkbox" name="radio").filter__input
-    label.filter__label Custom</br>
-      a(href="#").filter__reset Сбросить фильтр
+.main
+  .main__filter
+    ul.main__filter_list
+      li.main__filter_item
+        a(href="#").main__filter_link Флагманы
+      li.main__filter_item
+        a(href="#").main__filter_link.main__filter_link--active Бюджетная линейка
+
+
+  .filter
+    ul.filter__choose
+      li.filter__choose_item
+        a(href="#").filter__title Наличие в магазинах
+        ul.filter__choose_list
+          li.item
+            input(type="radio" name="radio").filter__input
+            span.filter__choose_element
+            label.filter__label Во всех магазинах
+          li.item
+            input(type="radio" name="radio").filter__input
+            span.filter__choose_element
+            label.filter__label В ближайшем ко мне магазине
+      li.filter__choose_item
+        a(href="#").filter__title Бренды
+        ul.filter__choose_list
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label lenovo
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label Apple
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label Samsung
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label Asus
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label Motorola
+            a(href="#").filter__reset Сбросить фильтр
+      li.filter__choose_item
+        a(href="#").filter__title Цена
+        ul.filter__choose_list
+          li.item
+            .filter__slider.clearfix
+              .filter__slider_left
+                p.filter__slider_text от
+                input(type='text').filter__slider_input
+              .filter__slider_right
+                p.filter__slider_text до
+                  input(type='text').filter__slider_input
+      li.filter__choose_item
+        a(href="#").filter__title Цвет
+        ul.filter__choose_list
+          li.item
+            ul.filter__list
+              - var Item = ['white', 'grey', 'black','blue', 'red', 'yellow', 'orange', 'green', 'blue-second', 'purple', 'rose','brown']
+              each val, key in Item
+                li.filter__item
+                  a(href="#" class="filter__link--#{val}").filter__link= key
+      li.filter__choose_item
+        a(href="#").filter__title Операционные системы
+        ul.filter__choose_list
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label Android
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label iOS
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label Windows Mobile
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label Symbian
+          li.item
+            input(type="checkbox" name="radio").filter__input
+            label.filter__label Custom
+            a(href="#").filter__reset Сбросить фильтр
 
 

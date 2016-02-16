@@ -1,3 +1,46 @@
-/**
- * Created by sergey on 13.02.16.
- */
+;(function(){
+
+  $('.filter__link').on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('filter__link--active');
+  });
+
+  $('.filter__title').on('click', function(e){
+    e.preventDefault();
+
+    var $this = $(this),
+        item = $this.closest('.filter__choose_item'),
+        list = $this.closest('.filter__choose'),
+        items = list.find('.filter__choose_item'),
+        content = item.find('.filter__choose_list'),
+        otherContent = list.find('.filter__choose_list'),
+        duration = 200;
+
+
+    if (!item.hasClass('active-class')) {
+          items.removeClass('active-class');
+          item.addClass('active-class');
+
+          otherContent.stop(true, true).slideUp(duration);
+          content.stop(true, true).slideDown(duration);
+    } else {
+          content.stop(true, true).slideUp(duration);
+          item.stop(true, true).removeClass('active-class');
+    }
+
+  })
+
+  $('.filter__reset').on('click', function(e){
+    e.preventDefault();
+
+    $('input[type=checkbox]').attr('checked', false);
+  });
+
+  $('.information__text').columnize({
+    width: 531,
+    columns: 2
+  });
+
+}());
+
+

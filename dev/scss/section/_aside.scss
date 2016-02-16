@@ -1,15 +1,45 @@
-.filter {
+.main {
   width: 330px;
+  float: left;
+}
+
+.main__filter {
+  border: 1px solid #dee1e4;
+  border-radius: 5px;
+  margin-bottom: 38px;
+
+  &_list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &_item {
+    list-style-type: none;
+  }
+
+  &_link {
+    display: block;
+    padding: 18px 28px;
+
+    @include font(14,  $open-reg,#5d656c);
+    text-decoration: none;
+  }
+}
+
+.main__filter_link--active {
+  background: #d9e5ea;
+}
+
+
+.filter {
   border: 1px solid #dee1e4;
   border-radius: 5px;
   background: #fbfbfb;
-  margin-top: 123px;
-  float: left;
 
   &__choose {
-    padding: 15px 25px;
     line-height: 2;
-    border-bottom: 1px solid #dee1e4;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -18,25 +48,38 @@
   @include font(16, $open-semi-bold, #333333);
   text-decoration: none;
   display: block;
-  margin-bottom: 20px;
+  padding: 15px 25px;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    @include sprite($arrow);
+    top: 19px;
+    right: 10px;
+  }
+
+  &:hover {
+    background: #d9e5ea;
+  }
 }
 
 .filter__label {
 
   @include font(14, $open-reg, #333333);
+
 }
 
-input[type="radio"] + label:checked {
-
-  @include sprite($chek);
-}
 
 .filter__reset {
 
   @include font(14,  $open-reg ,#5db2fc);
+  display: block;
 }
 
-.filter__list {
+.filter__list, .filter__choose_list {
   margin: 0;
   padding: 0;
 }
@@ -51,7 +94,7 @@ input[type="radio"] + label:checked {
   height: 37px;
   display: block;
   border-radius: 3px;
-  border: 1px solid #dee1e4;
+  border: 2px solid #dee1e4;
   text-indent: -9999px;
   margin-left: 18px;
   margin-bottom: 18px;
@@ -102,3 +145,51 @@ input[type="radio"] + label:checked {
 .filter__link--brown {
   background: #7f401d;
 }
+
+.filter__link--active {
+  border: 2px solid #ff6600;
+}
+
+.filter__choose_item {
+  list-style-type: none;
+  border-bottom: 1px solid #dee1e4;
+}
+
+.item {
+  list-style-type: none;
+}
+
+.filter__choose_list {
+  display: none;
+  padding: 15px 25px;
+}
+
+.filter__slider_left {
+  width: 50%;
+  float: left;
+}
+
+.filter__slider_right {
+  width: 50%;
+  float: right;
+}
+
+.filter__slider_text {
+   @include font(14, $open-reg, #333333);
+
+   display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.filter__slider_input {
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  width: 79px;
+  padding: 8px;
+}
+
+
+
+
+

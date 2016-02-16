@@ -3,6 +3,7 @@
   "devDependencies": {},
   "dependencies": {
     "jquery": "~2.2.0",
-    "normalize-scss": "~3.0.3"
+    "normalize-scss": "~3.0.3",
+    "jquery.columnizer": "1.6.1"
   }
 }

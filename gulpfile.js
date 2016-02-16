@@ -67,6 +67,9 @@ var paths = {
   js: {
     location: [
       'bower_components/jquery/dist/jquery.js',
+      'bower_components/jquery.columnizer/src/jquery.js',
+      'bower_components/jquery.columnizer/src/jquery.columnizer.js',
+      'bower_components/jquery.columnizer/src/jquery.js',
       'dev/js/main.js'
     ],
     destination: 'dev/js'

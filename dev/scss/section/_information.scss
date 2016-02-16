@@ -1,0 +1,13 @@
+.information {
+  max-width: 1156px;
+  margin: auto;
+  padding-bottom: 90px;
+
+  &__title {
+
+    @include font(20, $open-bold, #333333);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 27px;
+  }
+}

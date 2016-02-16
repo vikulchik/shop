@@ -1,4 +1,15 @@
 .container {
   width: 740px;
   float: right;
+
+  &__sorting {
+    width: 100%;
+    background: #e4ebee;
+    border: 1px solid #dee1e4;
+    border-radius: 5px;
+    min-height: 50px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+  }
 }

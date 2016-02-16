@@ -64,57 +64,167 @@
           </ul>
           <h2 class="wrapper__description">Мобильные телефоны</h2>
         </div>
-        <div class="filter">
-          <div class="filter__choose"><a href="#" class="filter__title">Наличие в магазинах</a>
-            <input type="radio" name="radio" class="filter__input">
-            <label class="filter__label">Во всех магазинах</br></label>
-            <input type="radio" name="radio" class="filter__input">
-            <label class="filter__label">В ближайшем ко мне магазине</label>
-          </div>
-          <div class="filter__choose"><a href="#" class="filter__title">Бренды</a>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">lenovo</br></label>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">Apple</br></label>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">Samsung</br></label>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">Asus</br></label>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">Motorola</br></label><a href="#" class="filter__reset">Сбросить фильтр</a>
-          </div>
-          <div class="filter__choose filter__choose--price"><a href="#" class="filter__title">Цена</a></div>
-          <div class="filter__choose filter__choose--color"><a href="#" class="filter__title">Цвет</a>
-            <ul class="filter__list">
-              <li class="filter__item"><a href="#" class="filter__link--white filter__link">1</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--grey filter__link">2</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--black filter__link">3</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--blue filter__link">4</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--red filter__link">5</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--yellow filter__link">6</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--orange filter__link">7</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--green filter__link">8</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--blue-second filter__link">9</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--purple filter__link">10</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--rose filter__link">11</a></li>
-              <li class="filter__item"><a href="#" class="filter__link--brown filter__link">12</a></li>
+        <div class="main">
+          <div class="main__filter">
+            <ul class="main__filter_list">
+              <li class="main__filter_item"><a href="#" class="main__filter_link">Флагманы</a></li>
+              <li class="main__filter_item"><a href="#" class="main__filter_link main__filter_link--active">Бюджетная линейка</a></li>
             </ul>
           </div>
-          <div class="filter__choose filter__choose--system"><a href="#" class="filter__title">Операционные системы</a>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">Android</br></label>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">iOS</br></label>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">Windows Mobile</br></label>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">Symbian</br></label>
-            <input type="checkbox" name="radio" class="filter__input">
-            <label class="filter__label">Custom</br><a href="#" class="filter__reset">Сбросить фильтр</a></label>
+          <div class="filter">
+            <ul class="filter__choose">
+              <li class="filter__choose_item"><a href="#" class="filter__title">Наличие в магазинах</a>
+                <ul class="filter__choose_list">
+                  <li class="item">
+                    <input type="radio" name="radio" class="filter__input"><span class="filter__choose_element"></span>
+                    <label class="filter__label">Во всех магазинах</label>
+                  </li>
+                  <li class="item">
+                    <input type="radio" name="radio" class="filter__input"><span class="filter__choose_element"></span>
+                    <label class="filter__label">В ближайшем ко мне магазине</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter__choose_item"><a href="#" class="filter__title">Бренды</a>
+                <ul class="filter__choose_list">
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">lenovo</label>
+                  </li>
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">Apple</label>
+                  </li>
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">Samsung</label>
+                  </li>
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">Asus</label>
+                  </li>
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">Motorola</label><a href="#" class="filter__reset">Сбросить фильтр</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter__choose_item"><a href="#" class="filter__title">Цена</a>
+                <ul class="filter__choose_list">
+                  <li class="item">
+                    <div class="filter__slider clearfix">
+                      <div class="filter__slider_left">
+                        <p class="filter__slider_text">от</p>
+                        <input type="text" class="filter__slider_input">
+                      </div>
+                      <div class="filter__slider_right">
+                        <p class="filter__slider_text">до
+                          <input type="text" class="filter__slider_input">
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter__choose_item"><a href="#" class="filter__title">Цвет</a>
+                <ul class="filter__choose_list">
+                  <li class="item">
+                    <ul class="filter__list">
+                      <li class="filter__item"><a href="#" class="filter__link--white filter__link">0</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--grey filter__link">1</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--black filter__link">2</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--blue filter__link">3</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--red filter__link">4</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--yellow filter__link">5</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--orange filter__link">6</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--green filter__link">7</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--blue-second filter__link">8</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--purple filter__link">9</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--rose filter__link">10</a></li>
+                      <li class="filter__item"><a href="#" class="filter__link--brown filter__link">11</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter__choose_item"><a href="#" class="filter__title">Операционные системы</a>
+                <ul class="filter__choose_list">
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">Android</label>
+                  </li>
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">iOS</label>
+                  </li>
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">Windows Mobile</label>
+                  </li>
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">Symbian</label>
+                  </li>
+                  <li class="item">
+                    <input type="checkbox" name="radio" class="filter__input">
+                    <label class="filter__label">Custom</label><a href="#" class="filter__reset">Сбросить фильтр</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="container"></div>
+        <div class="container">
+          <div class="container__sorting">
+            <p class="container__text">Сортировать по</p>
+            <select class="container__select">
+              <option>по цене</option>
+              <option>по популярности</option>
+            </select>
+          </div>
+        </div>
       </div>
+      <section class="information">
+        <h3 class="information__title">Важная информация</h3>
+        <div class="information__text">
+          Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.
+          Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
+          Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+          Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.
+          Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
+          Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+        </div>
+      </section>
     </div>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__contact clearfix">
+          <div class="footer__logo"><a href="http://shop.build-yourself.ru/" class="logo__link"><img src="../img/cooltech-footer.png" alt="logo" class="logo__img"></a>
+            <h1 class="logo__description">Logo</h1>
+          </div>
+          <div class="footer__socials">
+            <ul class="footer__socials_list">
+              <li class="footer__socials_item"><a href="https://www.facebook.com/vika.kovalenko3" target="_blank" class="footer__socials_link--fb footer__socials_link">fb</a></li>
+              <li class="footer__socials_item"><a href="https://vk.com/idvikul4ik" target="_blank" class="footer__socials_link--vk footer__socials_link">vk</a></li>
+              <li class="footer__socials_item"><a href="https://twitter.com/vikanovikvika93" target="_blank" class="footer__socials_link--tw footer__socials_link">tw</a></li>
+            </ul>
+          </div>
+          <nav class="footer__navigation">
+            <div class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Планшеты </a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Мобильные телефоны </a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Мр3 плееры</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Персональные компьютеры</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Ноутбуки</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Аксессуары</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Бытовая техника</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom"></div>
+    </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
