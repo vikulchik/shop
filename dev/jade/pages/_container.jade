@@ -1,7 +1,17 @@
-.container
+.container.clearfix
   .container__sorting
     p.container__text Сортировать по
     select.container__select
       option по цене
       option по популярности
+  .container__kind.clearfix
+    p.container__text.container__text--menu Вид каталога
+    .container__menu
+      ul.container__list
+        li.container__item
+          a(href="#").container__link.container__link--first
+        li.container__item
+          a(href="#").container__link.container__link--second
+        li.container__item
+          a(href="#").container__link.container__link--third
 

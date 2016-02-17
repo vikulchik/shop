@@ -1,15 +1,106 @@
 .container {
   width: 740px;
   float: right;
+  background: #e4ebee;
+  border: 1px solid #dee1e4;
+  border-radius: 5px;
+  height: 50px;
 
-  &__sorting {
-    width: 100%;
-    background: #e4ebee;
-    border: 1px solid #dee1e4;
-    border-radius: 5px;
+  &__sorting, &__kind {
+    width: 50%;
     min-height: 50px;
-    padding: 10px 20px;
+    padding: 14px 20px;
     box-sizing: border-box;
-
   }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+
+    @include font(14, $open-reg, #5d656c);
+    display: inline-block;
+  }
+
+  &__select {
+    margin-left: 8px;
+  }
+}
+
+.container__sorting {
+  float: left;
+}
+
+.container__kind {
+  float: right;
+  padding: 0;
+  text-align: right;
+}
+
+.container__menu {
+  float: right;
+  height: 50px;
+  width: 165px;
+}
+
+.container__item {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.container__list {
+  margin: 0;
+  padding: 0;
+}
+
+.container__link {
+  display: block;
+  position: relative;
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+  border-left: 1px solid #dee1e4;
+}
+
+.container__link--first {
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    @include sprite($menu-1);
+    top: 17px;
+    left: 19px;
+  }
+}
+
+.container__link--second {
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    @include sprite($menu-2);
+    top: 17px;
+    left: 19px;
+  }
+}
+
+.container__link--third {
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    @include sprite($menu-3);
+    top: 17px;
+    left: 19px;
+  }
+}
+
+.container__text--menu {
+  margin-top: 17px;
+  margin-right: 15px;
 }
