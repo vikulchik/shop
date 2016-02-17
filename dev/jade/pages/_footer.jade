@@ -5,19 +5,20 @@ footer.footer
         a(href='http://shop.build-yourself.ru/').logo__link
           img(src="../img/cooltech-footer.png" alt="logo").logo__img
         h1.logo__description Logo
-      .footer__socials
-        ul.footer__socials_list
-          - var Item = {'fb' : 'https://www.facebook.com/vika.kovalenko3', 'vk' : 'https://vk.com/idvikul4ik', 'tw' : 'https://twitter.com/vikanovikvika93'};
-          each val, key in Item
-            li.footer__socials_item
-              a(href="#{val}" class="footer__socials_link--#{key}"  target="_blank").footer__socials_link= key
-      nav.footer__navigation
-        .footer__menu
-          ul.footer__list
-            -var array = ['Планшеты ', 'Мобильные телефоны ', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
-            each item in array
-              li.footer__item
-                a(href="#").footer__link= item
+      .footer__menu
+        .footer__socials
+          ul.footer__socials_list
+            - var Item = {'fb' : 'https://www.facebook.com/vika.kovalenko3', 'vk' : 'https://vk.com/idvikul4ik', 'tw' : 'https://twitter.com/vikanovikvika93'};
+            each val, key in Item
+              li.footer__socials_item
+                a(href="#{val}" class="footer__socials_link--#{key}"  target="_blank").footer__socials_link= key
+        nav.footer__navigation
+            ul.footer__list
+              -var array = ['Планшеты ', 'Мобильные телефоны ', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
+              each item in array
+                li.footer__item
+                  a(href="#").footer__link= item
   .footer__bottom
+    .footer__copyright All rights reserved. 2015. no copy alowed
 
 

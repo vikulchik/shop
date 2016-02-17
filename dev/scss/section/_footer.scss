@@ -15,13 +15,9 @@
     margin-top: 69px;
   }
 
-  &__socials {
-    float: right;
-  }
 
   &__navigation {
-    width: 535px;
-    float: right;
+    width: 577px;
   }
 
   &__item {
@@ -31,16 +27,30 @@
 
   }
 
+  &__copyright {
+
+    @include font(12, $open-reg,#fff );
+    margin-top: 9px;
+  }
+
   &__link {
 
     @include font(14, $open-reg, #ffffff);
+
+    &:hover {
+      color: #ff6600;
+    }
+  }
+
+  &__bottom {
+    min-height: 28px;
+    text-align: center;
   }
 }
 
 .footer__socials {
   display: block;
-  float: right;
-  margin-top: 33px;
+  margin:33px 0 33px 0 ;
 
   &_list {
     margin: 0;
@@ -95,4 +105,16 @@
 
     @include sprite($tw-hover);
   }
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+.footer__menu {
+  float: right;
+  width: 577px;
+  text-align: right;
 }
