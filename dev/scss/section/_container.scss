@@ -1,10 +1,10 @@
 .container {
   width: 740px;
-  float: right;
   background: #e4ebee;
   border: 1px solid #dee1e4;
   border-radius: 5px;
   height: 50px;
+  margin-bottom: 20px;
 
   &__sorting, &__kind {
     width: 50%;

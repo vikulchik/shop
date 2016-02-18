@@ -8,10 +8,16 @@
 @import "section/_aside";
 @import "section/_container";
 @import "section/_information";
+@import "section/_products";
 @import "section/_footer";
 
 
 .wrapper {
   width: 100%;
   background: #f4f4f4;
+}
+
+.main_products {
+  width: 743px;
+  float: right;
 }
