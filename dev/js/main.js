@@ -41,6 +41,27 @@
     columns: 2
   });
 
+  $('.slideshow__link').on('click', function(e){
+    e.preventDefault();
+
+    var $this = $(this),
+        item = $this.closest('.slideshow__item'),
+        container = $this.closest('.slideshow'),
+        display = container.find('.slide'),
+        path = item.find('img').attr('src'),
+        duration = 300;
+
+    if (!item.hasClass('active-slide')){
+      item.addClass('active-slide').siblings().removeClass('active-slide');
+
+      display.find('img').fadeOut(duration, function(){
+        $(this).attr('src', path).fadeIn(duration);
+      })
+    }
+
+
+  });
+
 }());
 
 
