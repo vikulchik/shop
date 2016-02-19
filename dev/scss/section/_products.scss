@@ -1,5 +1,4 @@
 .products {
-
   &__list {
     padding: 0;
     margin: 0;
@@ -65,6 +64,7 @@
   border-radius: 5px;
   margin: auto;
   margin-bottom: 15px;
+  overflow: hidden;
 
   &__img {
     max-width: 100%;
@@ -96,7 +96,9 @@
     display: block;
     border: 1px solid #dee1e4;
     border-radius: 5px;
-  }
+    overflow: hidden;
+
+}
 
 .slideshow__img {
     max-width: 100%;
