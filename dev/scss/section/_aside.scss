@@ -189,6 +189,38 @@
   padding: 8px;
 }
 
+.ui-widget-content {
+  height: 3px;
+  background: #dee1e4;
+  border-radius: 0;
+  border: none;
+}
+
+.ui-widget-header {
+  background: #ff6600;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: none;
+  border: none;
+}
+
+.ui-state-default {
+  background: none;
+  border: none;
+  position: absolute;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 7px;
+
+    @include sprite($slider);
+  }
+
+}
+
 
 
 

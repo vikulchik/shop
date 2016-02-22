@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Shop</title>
     <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -115,7 +117,7 @@
                     <div class="filter__slider clearfix">
                       <div class="filter__slider_left">
                         <p class="filter__slider_text">от</p>
-                        <input type="text" class="filter__slider_input">
+                        <input type="text" id="amount" class="filter__slider_input">
                       </div>
                       <div class="filter__slider_right">
                         <p class="filter__slider_text">до
@@ -123,6 +125,7 @@
                         </p>
                       </div>
                     </div>
+                    <div id="slider-range" class="slider"></div>
                   </li>
                 </ul>
               </li>

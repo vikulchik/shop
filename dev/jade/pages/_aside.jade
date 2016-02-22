@@ -46,10 +46,11 @@
             .filter__slider.clearfix
               .filter__slider_left
                 p.filter__slider_text от
-                input(type='text').filter__slider_input
+                input(type='text' id='amount').filter__slider_input
               .filter__slider_right
                 p.filter__slider_text до
                   input(type='text').filter__slider_input
+            .slider(id='slider-range')
       li.filter__choose_item
         a(href="#").filter__title Цвет
         ul.filter__choose_list

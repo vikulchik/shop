@@ -69,7 +69,8 @@ var paths = {
       'bower_components/jquery/dist/jquery.js',
       'bower_components/jquery.columnizer/src/jquery.js',
       'bower_components/jquery.columnizer/src/jquery.columnizer.js',
-      'bower_components/jquery.columnizer/src/jquery.js',
+      'dev/js/select2.min.js',
+      'dev/js/jquery-ui.js',
       'dev/js/main.js'
     ],
     destination: 'dev/js'
