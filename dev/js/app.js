@@ -27173,14 +27173,29 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
   $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
     " - " + $( "#slider-range" ).slider( "values", 1 ) );
 
-  $('.container__link').on('click', function(e){
+  $('.container__link--first').on('click', function(e){
 
     e.preventDefault();
 
-    var wrap = $('section'),
-        classname = $( content.attr('class'));
-    wrap.removeClass().addClass(classname);
-  })
+    var wrap = $('section');
+    wrap.removeClass().addClass('products__first');
+  });
+
+  $('.container__link--second').on('click', function(e){
+
+    e.preventDefault();
+
+    var wrap = $('section');
+    wrap.removeClass().addClass('products__second');
+  });
+
+  $('.container__link--third').on('click', function(e){
+
+    e.preventDefault();
+
+    var wrap = $('section');
+    wrap.removeClass().addClass('products__third');
+  });
 
 }());
 
