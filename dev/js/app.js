@@ -27167,7 +27167,7 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
     values: [ 100, 13000 ],
     slide: function( event, ui ) {
       $( "#amount" ).val(ui.values[ 1 ] );
-      $('.filter__slider_input').val( "" + ui.values[ 0 ]);
+      $('.filter__slider_input').val( ui.values[ 0 ]);
     }
   });
   $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
