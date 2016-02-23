@@ -27173,6 +27173,15 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
   $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
     " - " + $( "#slider-range" ).slider( "values", 1 ) );
 
+  $('.container__link').on('click', function(e){
+
+    e.preventDefault();
+
+    var wrap = $('section'),
+        classname = $( content.attr('class'));
+    wrap.removeClass().addClass(classname);
+  })
+
 }());
 
 
