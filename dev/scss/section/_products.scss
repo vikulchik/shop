@@ -355,11 +355,11 @@
   .products__price {
     @include font(20,$open-semi-bold,#333333);
 
-    width: 150px;
+    width: 85px;
     display: block;
     position: absolute;
     top: 24px;
-    right: -37px;
+    right: 21px;
   }
 
   .products__block {
@@ -538,6 +538,10 @@
   }
   .block-info {
     margin-right: 20px;
+    width: 271px;
+    float: none;
+    border-right: none;
+    padding: 0;
   }
   .slideshow,
   .block-info{
