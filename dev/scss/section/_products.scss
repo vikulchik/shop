@@ -9,6 +9,13 @@
     display: none;
   }
 
+  .block-info {
+    width: 212px;
+    float: none;
+    border-right: none;
+    padding: 0;
+  }
+
   .slide__text {
     display: none;
   }
@@ -124,10 +131,6 @@
     &-item {
       list-style-type: none;
       display: inline-block;
-    }
-
-    &-link {
-      display: block;
       width: 16px;
       height: 16px;
 
@@ -135,7 +138,7 @@
     }
   }
 
-  .block__star-link--white {
+  .block__star-item--white {
     @include sprite($star);
   }
 
@@ -147,7 +150,7 @@
 
   .block__star-link--other {
     text-decoration: none;
-    display: block;
+    display: inline-block;
     background: #b5beca;
     width: 28px;
     height: 15px;
@@ -169,8 +172,7 @@
   }
 
   .products__stock {
-    margin: 0;
-    margin-left: 15px;
+    margin: 11px 0 0 15px;
     display: inline-block;
     position: relative;
 
@@ -226,6 +228,7 @@
     border-bottom: 1px solid #dee1e4;
     padding: 20px;
     cursor: pointer;
+    position: relative;
 
     &:hover {
       box-shadow: 0 0 18px 0 #b8b2b8;
@@ -320,10 +323,6 @@
     &-item {
       list-style-type: none;
       display: inline-block;
-    }
-
-    &-link {
-      display: block;
       width: 16px;
       height: 16px;
 
@@ -331,7 +330,7 @@
     }
   }
 
-  .block__star-link--white {
+  .block__star-item--white {
     @include sprite($star);
   }
 
@@ -342,8 +341,7 @@
   }
 
   .block__star-link--other {
-    text-decoration: none;
-    display: block;
+    display: inline-block;
     background: #b5beca;
     width: 28px;
     height: 15px;
@@ -358,12 +356,19 @@
     @include font(20,$open-semi-bold,#333333);
 
     width: 150px;
-    min-height: 20px;
-    margin-bottom: 63px;
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: -37px;
   }
 
   .products__block {
-    padding-top: 91px;
+    display: inline-block;
+    width: 105px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+  }
   }
 
   .products__stock {
@@ -408,15 +413,16 @@
 
   .price-info {
     width: 151px;
-    float: right;
-    border-left: 1px solid #dee1e4;
-    text-align: right;
     padding-top: 10px;
+    position: relative;
   }
 
   .block-info {
-    width:388px;
+    width:363px;
     float: left;
+    border-right: 1px solid #dee1e4;
+    padding-bottom: 58px;
+    padding-right: 25px;
   }
 
   .slide__text  {
@@ -432,7 +438,6 @@
     @include font(14,$open-semi-bold,#333333);
   }
 
-}
 
 .products__third {
   background: #fbfbfb;
