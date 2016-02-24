@@ -27174,18 +27174,26 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 
   //Ползунок цен
 
-  $( "#slider-range" ).slider({
+  var slider = $( "#slider-range"),
+      minField = $( ".filter__slider_first"),
+      maxField = $( ".filter__slider_second"),
+      minVal = +minField.attr('data-min'),
+      maxVal = +maxField.attr('data-max');
+
+  slider.slider({
     range: true,
-    min: 0,
-    max: 13000,
-    values: [ 100, 13000 ],
+    min: minVal,
+    max: maxVal,
+    values: [ 1300, 8000 ],
     slide: function( event, ui ) {
-      $( ".filter__slider_first" ).val(ui.values[ 0 ]);
-      $('.filter__slider_second').val( ui.values[ 1 ]);
+      minField.val(ui.values[ 0 ]);
+      maxField.val(ui.values[ 1 ]);
     }
   });
-  $( ".filter__slider_first" ).val($( "#slider_price" ).slider( "values", 0 ));
-  $( ".filter__slider_second" ).val($( "#slider_price" ).slider( "values", 1 ));
+
+  minField.val(slider.slider( "values", 0 ));
+  maxField.val(slider.slider( "values", 1 ));
+
 
 
   //Переключатель блоков с товарами
