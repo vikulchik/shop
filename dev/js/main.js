@@ -1,9 +1,13 @@
 ;(function(){
 
+  //Выбор цветов
+
   $('.filter__link').on('click', function(e){
     e.preventDefault();
     $(this).toggleClass('filter__link--active');
   });
+
+  //Аккордеон
 
   $('.filter__title').on('click', function(e){
     e.preventDefault();
@@ -28,7 +32,9 @@
           item.stop(true, true).removeClass('active-class');
     }
 
-  })
+  });
+
+  //Сброс фильтров
 
   $('.filter__reset').on('click', function(e){
     e.preventDefault();
@@ -36,10 +42,14 @@
     $('input[type=checkbox]').attr('checked', false);
   });
 
+  //Columnize
+
   $('.information__text').columnize({
     width: 531,
     columns: 2
   });
+
+  //Slideshow
 
   $('.slideshow__link').on('click', function(e){
     e.preventDefault();
@@ -62,7 +72,11 @@
 
   });
 
+  //Селект
+
   $('select').select2();
+
+  //Ползунок цен
 
   $( "#slider-range" ).slider({
     range: true,
@@ -70,12 +84,15 @@
     max: 13000,
     values: [ 100, 13000 ],
     slide: function( event, ui ) {
-      $( "#amount" ).val(ui.values[ 1 ] );
-      $('.filter__slider_input').val( ui.values[ 0 ]);
+      $( ".filter__slider_first" ).val(ui.values[ 0 ]);
+      $('.filter__slider_second').val( ui.values[ 1 ]);
     }
   });
-  $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
-    " - " + $( "#slider-range" ).slider( "values", 1 ) );
+  $( ".filter__slider_first" ).val($( "#slider_price" ).slider( "values", 0 ));
+  $( ".filter__slider_second" ).val($( "#slider_price" ).slider( "values", 1 ));
+
+
+  //Переключатель блоков с товарами
 
   $('.container__link--first').on('click', function(e){
 
