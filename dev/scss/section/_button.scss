@@ -1,0 +1,29 @@
+.button {
+  width: 190px;
+  float: right;
+  margin-right: 13px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  &__link {
+    text-decoration: none;
+    @include font(14, $open-bold, #7f7f7f);
+    display: block;
+    background: #fbfbfb;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    padding: 4px 8px;
+
+    &:hover {
+      background: #e0e0e0;
+    }
+  }
+}

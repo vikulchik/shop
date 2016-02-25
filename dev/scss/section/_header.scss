@@ -8,10 +8,11 @@
   }
 
   &__right {
-    width: 465px;
+    width: 452px;
     float: right;
     display: block;
     margin-top: 30px;
+    margin-right: 51px;
   }
 
   &__adress {
@@ -68,14 +69,15 @@
     width: 368px;
     margin-top: 30px;
     float: left;
-    margin-left: 96px;
+    margin-left: 57px;
   }
 
   &__menu {
-    width: 387px;
+    width: 390px;
     display: block;
     float: right;
     margin-top: 35px;
+    margin-right: 55px;
   }
 }
 
@@ -97,7 +99,7 @@
   &__item {
     display: inline-block;
     list-style-type: none;
-    margin-left: 17px;
+    margin-left: 12px;
     &:first-child {
       margin-left: 0;
     }
@@ -163,8 +165,8 @@
   border: 1px solid #dee1e4;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
-  width: 288px;
-  height:12px;
+  width: 269px;
+  height: 11px;
   padding: 11px 8px;
   position: relative;
 
@@ -178,7 +180,7 @@
 .header__button {
   position: absolute;
   width: 78px;
-  height: 36px;
+  height: 35px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   background: #ff6e35;
