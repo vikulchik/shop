@@ -45,7 +45,7 @@
   //Columnize
 
   $('.information__text').columnize({
-    width: 531,
+    width: 529,
     columns: 2
   });
 
