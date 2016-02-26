@@ -36,3 +36,20 @@
   background: #ff6600;
   color: #FFFFFF;
 }
+
+.active-class {
+  .filter__title {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 10px;
+
+      @include sprite($arrow-bottom);
+    }
+    &:after {
+      display: none;
+    }
+  }
+}

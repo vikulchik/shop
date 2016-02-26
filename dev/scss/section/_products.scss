@@ -475,6 +475,7 @@
   background: #fbfbfb;
   border: 1px solid #dee1e4;
   border-radius: 5px;
+  width: 739px;
 
   .slide,
   .block__star,
@@ -505,7 +506,7 @@
   .products__item {
     display: block;
     border-bottom: 1px solid #dee1e4;
-    padding: 20px 10px;
+    padding: 10px 10px;
     cursor: pointer;
 
     &:hover {
@@ -564,6 +565,10 @@
       background: #F44336;
     }
   }
+
+ .products__block {
+  height: 36px;
+ }
 
   .price-info {
    display: inline-block;
