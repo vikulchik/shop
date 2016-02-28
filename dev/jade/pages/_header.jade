@@ -16,7 +16,7 @@ header.header
         a(href='http://shop.build-yourself.ru/').logo__link
           img(src="../img/logo.png" alt="logo").logo__img
         h1.logo__description Logo
-      .header__search
+      form(method="POST" action="/").header__search
         input(type="search" name="search" placeholder="Что будем искать").header__input
         button(type="submit").header__button  Найти
       .header__menu

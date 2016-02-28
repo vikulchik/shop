@@ -26,6 +26,50 @@
 .active-slide {
   border: 1px solid #ff6600;
   border-radius: 5px;
+
+  .slideshow__link {
+    border: none;
+  }
+}
+
+.container__item--active {
+  .container__link--first {
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+
+      @include sprite($menu-1-hover);
+      top: 17px;
+      left: 19px;
+    }
+  }
+}
+.container__item--active {
+  .container__link--second {
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+
+      @include sprite($menu-2-hover);
+      top: 17px;
+      left: 19px;
+    }
+  }
+}
+.container__item--active {
+  .container__link--third {
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+
+      @include sprite($menu-3-hover);
+      top: 17px;
+      left: 19px;
+    }
+  }
 }
 
 .active__link {

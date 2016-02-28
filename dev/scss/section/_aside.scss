@@ -71,6 +71,7 @@
   @include font(14, $open-reg, #333333);
   position: relative;
   margin-left: 40px;
+  cursor: pointer;
 
 }
 
@@ -231,7 +232,6 @@
     left: 0;
     bottom:0;
     right:0;
-    transition: .3s;
   }
 }
 

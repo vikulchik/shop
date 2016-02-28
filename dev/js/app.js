@@ -27140,10 +27140,10 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 
   //Columnize
 
-  $('.information__text').columnize({
-    width: 529,
-    columns: 2
-  });
+  if($(".information__block").length){
+    $('.information__block p').addClass('dontsplit');
+    $('.information__block').columnize({ columns: 2 });
+  }
 
   //Slideshow
 
@@ -27221,6 +27221,13 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
     var wrap = $('section');
     wrap.removeClass().addClass('products__third');
   });
+
+
+  //---------------------//
+
+  $('.container__item').on('click', function(){
+    $(this).addClass('container__item--active').siblings().removeClass('container__item--active');
+  })
 
 }());
 

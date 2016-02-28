@@ -11,7 +11,18 @@
     margin-bottom: 27px;
   }
 
-  &__text {
-    margin: 0;
-  }
+}
+
+.information__block p {
+  margin-bottom: 30px;
+  height: 136px;
+}
+
+.first {
+  width: 45%!important;
+  margin-right: 48px;
+}
+
+.first, .last {
+  text-align: justify;
 }
