@@ -1,5 +1,5 @@
 .information {
-  max-width: 1156px;
+  max-width: 1060px;
   margin: auto;
   padding-bottom: 90px;
 
@@ -16,6 +16,7 @@
 .information__block p {
   margin-bottom: 30px;
   height: 136px;
+  @include font(14, $open-reg, #333333);
 }
 
 .first {

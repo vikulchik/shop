@@ -41,6 +41,7 @@
     padding: 0;
     margin: 0;
   }
+
 }
 
 .filter__title {
@@ -48,7 +49,7 @@
   @include font(16, $open-semi-bold, #333333);
   text-decoration: none;
   display: block;
-  padding: 12px 25px;
+  padding: 13px 27px;
   position: relative;
 
   &:after {
@@ -59,10 +60,6 @@
     @include sprite($arrow);
     top: 19px;
     right: 10px;
-  }
-
-  &:hover {
-    background: #d9e5ea;
   }
 }
 
@@ -80,6 +77,8 @@
 
   @include font(14,  $open-reg ,#5db2fc);
   display: block;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .filter__list, .filter__choose_list {
@@ -164,7 +163,7 @@
 
 .filter__choose_list {
   display: none;
-  padding: 0 17px;
+  padding: 0 17px 15px 17px;
 }
 
 .filter__slider_left {
@@ -257,8 +256,8 @@
 .filter__slider_input {
   border: 1px solid #DDDDDD;
   border-radius: 5px;
-  width: 79px;
-  padding: 8px;
+  width: 66px;
+  padding: 6px;
 }
 
 .ui-widget-content {
@@ -297,6 +296,14 @@
   margin-bottom: 20px;
 }
 
+.item_other {
+  margin-bottom: 5px;
+}
+
+.filter__label--other {
+  display: block;
+  margin-bottom: 26px;
+}
 
 
 
